@@ -133,12 +133,14 @@ export default function EducationTemplate({
       <Grid item lg={12} sm={12} xs={12}>
         {educationData.map((obj) => {
           return (
-            <EducationDetailsBox
-              handleOpenList={handleOpenList}
-              openList={openList}
-              classes={classes}
-              data={obj}
-            />
+            <div key={obj.id}>
+              <EducationDetailsBox
+                handleOpenList={handleOpenList}
+                openList={openList}
+                classes={classes}
+                data={obj}
+              />
+            </div>
           );
         })}
       </Grid>
