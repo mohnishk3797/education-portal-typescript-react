@@ -1,0 +1,114 @@
+.sidebar__button {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  background-color: rgb(23, 25, 148);
+  height: 100vh;
+  width: 14rem;
+  z-index: 99999999 !important;
+}
+.active {
+  left: 0;
+  transition: left 600ms ease-out;
+}
+.inactive {
+  left: -100%;
+  transition: left 700ms ease-out;
+}
+.sidebar__close_button {
+  margin: 1rem;
+  cursor: pointer;
+}
+.sidebar__menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__menu_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0.2rem 0.5rem;
+  background-color: rgb(78, 95, 202);
+  padding: 0.6rem;
+  color: rgb(211, 211, 230);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.link_fix {
+  text-decoration: none;
+}
+.add_button {
+  cursor: pointer;
+}
+.add_todo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 1.5rem;
+}
+.add_todo_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+.add_todo_form input {
+  height: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+.add_todo_form .todoName_input {
+  border: none;
+  width: 18rem;
+  border-bottom: 1px solid rgb(32, 43, 201);
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 0.3rem;
+}
+.add_todo_form .todoName_input:focus {
+  outline: none;
+}
+.add_todo__container .closeIcon {
+  align-self: flex-end;
+  cursor: pointer;
+  color: blue;
+}
+.add_todo__container h2 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+  color: blue;
+}
+.todo_submit {
+  width: 8rem;
+  background-color: rgb(34, 58, 168);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.status_container {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 1.3rem 0;
+}
+.status_container label {
+  color: blue;
+}
+.status_input {
+  width: 20px;
+  height: 20px;
+}
